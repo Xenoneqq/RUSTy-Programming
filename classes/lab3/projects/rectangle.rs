@@ -12,7 +12,7 @@ impl Rectangle {
         self.x * self.y
     }
 
-    fn circumference(&self) -> f32 {
+    fn perimeter(&self) -> f32 {
         self.x * 2.0 + self.y * 2.0
     }
 }
@@ -20,9 +20,9 @@ impl Rectangle {
 fn main(){
     let square = Rectangle::new_square(10.0);
     println!("Area: {}", square.area());
-    println!("Circumference: {}", square.circumference());
+    println!("Perimeter: {}", square.perimeter());
 
     let rect = Rectangle{x: 4.0, y: 2.0};
     println!("Area: {}", rect.area());
-    println!("Circumference: {}", rect.circumference());
+    println!("Perimeter: {}", rect.perimeter());
 }
